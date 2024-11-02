@@ -41,5 +41,3 @@ links.forEach((link) => {
     })
   })
 })
-
-console.log("test")
