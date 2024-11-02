@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" href="./assets/project_logo/logo.svg" />
     <title>Responsive Saas Website</title>
-    <meta name="description" content="Responsive SaaS Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive SaaS Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    
-    <link rel="stylesheet" href="./assets/css/default.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/8847226d37.js" crossorigin="anonymous"></script>
-    
-    <!-- Scripts-->
-    <script src="main.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/8847226d37.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Scripts-->
+    <script src="./main.js" async defer></script>
   </head>
-  
+
   <body>
     <div id="pageTop"></div>
 
     <!-- Navbar-->
-    <div class="menu-bar section">
-      <div class="desktop">
-        <div class="bg">
+    <section class="menu-bar section">
+      <div class="bg">
+        <nav id="topNav" class="navbar nav">
+          <div class="navbar-container">
+            <img
+              class="front-logo"
+              src="./assets/project_logo/logo.svg"
+              alt="logo"
+            />
+            <button
+              class="navbar-toggler"
+              aria-expanded="false"
+              aria-controls="navbarDropdown"
+            >
+              <span class="navbar-brand-icon uil uil-bars">&#9776;</span>
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-link">
+                <a href="#" class="menu-active">Home</a>
+              </li>
+              <li class="nav-link">
+                <a href="#features" class="menu">Features</a>
+              </li>
+              <li class="nav-link">
+                <a href="#learn" class="menu">Learn</a>
+              </li>
+              <li class="nav-link">
+                <a href="#pricing" class="menu">Pricing</a>
+              </li>
+              <li class="nav-link">
+                <a href="#hire" class="menu">Hire Us</a>
+              </li>
+              <li>
+                <div class="menu-btn">
+                  <button class="buy-now">Buy Now</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-          <nav id="topNav" class="navbar nav">
-            <div class="navbar-container">
-              <img class="front-logo" src="./assets/project_logo/logo.svg" alt="logo">
-              <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
-                <span class="navbar-brand-icon uil uil-bars">&#9776;</span>
-              </button>
-              <ul class="navbar-nav">
-                <li class="nav-link">
-                  <a href="#" class="menu-active">Home</a>
-                </li>
-                <li class="nav-link">
-                  <a href="#features" class="menu">Features</a>
-                </li>
-                <li class="nav-link">
-                  <a href="#learn" class="menu">Learn</a>
-                </li>
-                <li class="nav-link">
-                  <a href="#pricing" class="menu">Pricing</a>
-                </li>
-                <li class="nav-link">
-                  <a href="#hire" class="menu">Hire Us</a>
-                </li>
-                <li>
-                  <div class="menu-btn"><button class="buy-now">Buy Now</button></div>
-                </li>
-              </ul>
+        <!-- Teams Section -->
+        <div class="teams">
+          <div class="left-side">
+            <h1 class="teams-header">Empowering teams with the freedom</h1>
+            <p class="header-sub">
+              Own the unlimited power of the web <br />
+              development.
+            </p>
+            <div class="teams-links">
+              <div class="play-btn button">
+                <i class="fa-regular fa-circle-play"></i>
+                <h3>Play Video</h3>
+              </div>
+              <p class="lrn-more">Learn More</p>
             </div>
-          </nav>
+          </div>
 
-          <!-- Teams Section -->
-          <div class="teams">
-            <div class="left-side">
-              <h1 class="teams-header">Empowering teams with the freedom</h1>
-              <p class="header-sub">Own the unlimited power of the web <br> development.
-              </p>
-              <div class="teams-links">
-                <button class="play-btn"><i class="fa-regular fa-circle-play"></i><h3>Play Video</h3>
-                </button>
-                <p class="lrn-more">Learn More<i class="fa-solid fa-chevron-right arrow-right"></i>
-                </p>
-              </div>
+          <div class="circle-logo-group">
+            <div class="img-wrapper google slide-top">
+              <img src="./assets/logo_icons/google.png" alt="" />
             </div>
-
-            <div class="circle-logo-group">
-              <div class="img-wrapper google slide-top">
-                <img src="./assets/logo_icons/google.png" alt="">
-              </div>
-              <div class="img-wrapper paypal slide-top2">
-                <img src="./assets/logo_icons/paypal.jpg" alt="">
-              </div>
-              <div class="img-wrapper atlassian slide-top3">
-                <img src="./assets/logo_icons/atlassian.png" alt="">
-              </div>
-              <div class="img-wrapper asana slide-top4">
-                <img src="./assets/logo_icons/asana.png" alt="">
-              </div>
-              <div class="img-wrapper weave slide-top5">
-                <img src="./assets/logo_icons/weave.png" alt="">
-              </div>
-              <div class="img-wrapper google-a slide-top6">
-                <img src="./assets/logo_icons/google-A.png" alt="">
-              </div>
-              <div class="img-wrapper calendar slide-top7">
-                <img src="./assets/logo_icons/calendar.png" alt="">
-              </div>
+            <div class="img-wrapper paypal slide-top2">
+              <img src="./assets/logo_icons/paypal.jpg" alt="" />
+            </div>
+            <div class="img-wrapper atlassian slide-top3">
+              <img src="./assets/logo_icons/atlassian.png" alt="" />
+            </div>
+            <div class="img-wrapper asana slide-top4">
+              <img src="./assets/logo_icons/asana.png" alt="" />
+            </div>
+            <div class="img-wrapper weave slide-top5">
+              <img src="./assets/logo_icons/weave.png" alt="" />
+            </div>
+            <div class="img-wrapper google-a slide-top6">
+              <img src="./assets/logo_icons/google-A.png" alt="" />
+            </div>
+            <div class="img-wrapper calendar slide-top7">
+              <img src="./assets/logo_icons/calendar.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Key Benefits Section-->
-    <div class="key-benefits desktop">
-      <section id="features">
+    <section class="key-benefits">
+      <div id="features">
         <h1 class="benefits">Key benefits</h1>
         <p class="design">
           Design faster with a growing array of beautiful templates.
@@ -119,7 +137,11 @@
 
         <div class="key-benefits-cards">
           <div class="responsive">
-            <img src="./assets/icons/responsive.svg" alt="" class="respon-img">
+            <img
+              src="./assets/icons/responsive.svg"
+              alt=""
+              class="respon-img"
+            />
             <h4 class="respon-hdr">Responsive</h4>
             <p class="respon-txt">
               Front is an incredibly beautiful, fully responsive, and
@@ -131,7 +153,11 @@
           </div>
 
           <div class="responsive">
-            <img src="./assets/icons/customizable.svg" alt="" class="respon-img">
+            <img
+              src="./assets/icons/customizable.svg"
+              alt=""
+              class="respon-img"
+            />
             <h4 class="respon-hdr">Customizable</h4>
             <p class="respon-txt">
               Front template can be easily customized with its cutting-edge
@@ -143,7 +169,7 @@
           </div>
 
           <div class="responsive">
-            <img src="./assets/icons/premium.svg" alt="" class="respon-img">
+            <img src="./assets/icons/premium.svg" alt="" class="respon-img" />
             <div class="premium">
               <h4 class="respon-hdr">Premium</h4>
               <button class="sketch">sketch</button>
@@ -158,7 +184,11 @@
           </div>
 
           <div class="responsive">
-            <img src="./assets/icons/documentation.svg" alt="" class="respon-img">
+            <img
+              src="./assets/icons/documentation.svg"
+              alt=""
+              class="respon-img"
+            />
             <h4 class="respon-hdr">Documentation</h4>
             <p class="respon-txt">
               Every component and plugin is well documented with live examples.
@@ -168,122 +198,146 @@
             </p>
           </div>
         </div>
-      </section>
-    </div>
-      
+      </div>
+    </section>
+
     <!-- Learn Section-->
-    <section class="learn section desktop">
+    <section class="learn section">
       <div class="learn-pad">
         <div class="learn-hdr">
           <h1 class="learn-h1">
             Front makes you look at things from a different perspective
           </h1>
           <div class="teams-links">
-            <button class="play-btn"><i class="fa-regular fa-circle-play"></i><h3>Play Video</h3>
+            <button class="play-btn">
+              <i class="fa-regular fa-circle-play"></i>
+              <h3>Play Video</h3>
             </button>
           </div>
         </div>
 
         <div class="learn-hdr-img">
-          <img src="./assets/banners/banner_one.jpg" alt="" class="banner-one">
+          <img
+            src="./assets/banners/banner_one.jpg"
+            alt=""
+            class="banner-one"
+          />
         </div>
       </div>
     </section>
 
     <!-- Why Front Section -->
-    <section class="section desktop">
+    <section>
       <h1 id="learn" class="benefits">Why Front?</h1>
       <p class="design">
         Front is an incredibly beautiful, fully responsive, and mobile-first
         projects on the web - it is the starting point for creative sites.
       </p>
 
-      <div class="reasons">
-        <div class="reason-wrapper">
-          <div class="circle-div">
-            <p>.</p>
+      <div class="circles-container">
+        <div class="circles">
+          <div class="circle-item">
+            <div class="circle"></div>
+            <p class="circle-txt">Basic elements</p>
           </div>
-          <p class="circle-txt basic-elements">Basic elements</p>
-        </div>
-
-        <div class="reason-wrapper">
-          <div class="circle-div">
-            <p>.</p>
+          <div class="circle-item">
+            <div class="circle"></div>
+            <p class="circle-txt">Components</p>
           </div>
-          <p class="circle-txt components">Components</p>
-        </div>
-
-        <div class="reason-wrapper">
-          <div class="circle-div">
-            <p>.</p>
+          <div class="circle-item">
+            <div class="circle"></div>
+            <p class="circle-txt">Combined components</p>
           </div>
-          <p class="circle-txt combined">Combined components</p>
-        </div>
-
-        <div class="reason-wrapper">
-          <div class="lastCircle-div">
-            <p>.</p>
+          <div class="circle-item">
+            <div class="circle"></div>
+            <p class="circle-txt">Page layouts</p>
           </div>
-          <p class="circle-txt page-layouts">Page layouts</p>
         </div>
+        <div class="line"></div>
       </div>
 
       <div class="video">
-        <img class="banner-two" src="./assets/banners/banner_two.jpg" alt="">
-        <img class="play-circle" src="./assets/img/play-circle.svg" alt="">
+        <img class="banner-two" src="./assets/banners/banner_two.jpg" alt="" />
+        <img class="play-circle" src="./assets/img/play-circle.svg" alt="" />
       </div>
     </section>
 
     <!-- Christina Section -->
-    <section class="section christina-container desktop">
-      <div class="christina-left">
-        <div class="dots-pic-div">
-          <img src="./assets/abstract/dots.svg" alt="">
+    <section class="section">
+      <div class="christina-container">
+        <div class="christina-left">
+          <div class="dots-pic-div">
+            <img src="./assets/abstract/dots.svg" alt="" />
+          </div>
+          <div class="christina-pic-div">
+            <img src="./assets/people/woman_three.jpg" alt="" />
+          </div>
         </div>
-        <div class="christina-pic-div">
-          <img src="./assets/people/woman_three.jpg" alt="">
-        </div>
-      </div>
-      <div class="christina-right">
-        <div class="hubspot-logo">
-          <img class="hubspot" src="./assets/company_logos/hubspot.svg" alt="">
-        </div>
-        <div class="hubspot-content">
-          <p class="christina-txt">
-            The template is really nice and offers quite a large set of options.
-            It's beautiful and the coding is done quickly and seamlessly. Thank
-            you!
-          </p>
-          <p class="christina"><strong>Christina Kray</strong></p>
-          <p class="executive">Executive Director</p>
+        <div class="christina-right">
+          <div class="hubspot-logo">
+            <img
+              class="hubspot"
+              src="./assets/company_logos/hubspot.svg"
+              alt=""
+            />
+          </div>
+          <div class="hubspot-content">
+            <p class="christina-txt">
+              The template is really nice and offers quite a large set of
+              options. It's beautiful and the coding is done quickly and
+              seamlessly. Thank you!
+            </p>
+            <p class="christina"><strong>Christina Kray</strong></p>
+            <p class="executive">Executive Director</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Trusted Section -->
-    <section class="section desktop">
+    <section class="section">
       <h4 class="trusted">TRUSTED BY THE WORLD'S BEST</h4>
       <div class="comp-logos">
         <div>
-          <img class="comp-logo disappear" src="./assets/company_logos/weebly.svg" alt="">
+          <img
+            class="comp-logo disappear"
+            src="./assets/company_logos/weebly.svg"
+            alt=""
+          />
         </div>
         <div>
-          <img class="comp-logo disappear" src="./assets/company_logos/uber.svg" alt="">
+          <img
+            class="comp-logo disappear"
+            src="./assets/company_logos/uber.svg"
+            alt=""
+          />
         </div>
         <div>
-          <img class="comp-logo" src="./assets/company_logos/slack.svg" alt="">
+          <img
+            class="comp-logo"
+            src="./assets/company_logos/slack.svg"
+            alt=""
+          />
         </div>
         <div>
-          <img class="comp-logo" src="./assets/company_logos/airbnb.svg" alt="">
+          <img
+            class="comp-logo"
+            src="./assets/company_logos/airbnb.svg"
+            alt=""
+          />
         </div>
         <div>
-          <img class="comp-logo" src="./assets/company_logos/spotify.svg" alt="">
+          <img
+            class="comp-logo"
+            src="./assets/company_logos/spotify.svg"
+            alt=""
+          />
         </div>
       </div>
     </section>
 
     <!-- Pricing Section-->
-    <div class="section desktop">
+    <div class="section">
       <section id="pricing">
         <h1 class="price-title">Pricing</h1>
         <p class="costs">No additional costs. Pay for what you use.</p>
@@ -293,7 +347,7 @@
               <h1 class="price">$59</h1>
               <p class="monthly">/mo</p>
             </div>
-            <hr>
+            <hr />
             <p class="respon-txt">
               Start your Front business now. 100% guaranteed money back. No
               questions asked.
@@ -307,7 +361,11 @@
 
           <div class="price-info-grid">
             <div class="card">
-              <img src="./assets/icons/components.svg" alt="" class="pricing-img">
+              <img
+                src="./assets/icons/components.svg"
+                alt=""
+                class="pricing-img"
+              />
               <h4 class="pricing-hdr">Hundrends of components</h4>
               <p class="pricing-txt">
                 Achieve maximum productivity with minimum effort with Front and
@@ -316,7 +374,7 @@
             </div>
 
             <div class="card">
-              <img src="./assets/icons/images.svg" alt="" class="pricing-img">
+              <img src="./assets/icons/images.svg" alt="" class="pricing-img" />
               <h4 class="pricing-hdr">Images included</h4>
               <p class="pricing-txt">
                 We made custom license for all our premium images in the Front.
@@ -324,15 +382,21 @@
             </div>
 
             <div class="card">
-              <img src="./assets/icons/cancel.svg" alt="" class="pricing-img">
-              <h4 class="pricing-hdr">Cancel anytime<button class="sketch">sketch</button></h4>
+              <img src="./assets/icons/cancel.svg" alt="" class="pricing-img" />
+              <h4 class="pricing-hdr">
+                Cancel anytime<button class="sketch">sketch</button>
+              </h4>
               <p class="pricing-txt">
                 If its not for you, just cancel, no hidden costs or fees.
               </p>
             </div>
 
             <div class="card">
-              <img src="./assets/icons/moneyback.svg" alt="" class="pricing-img">
+              <img
+                src="./assets/icons/moneyback.svg"
+                alt=""
+                class="pricing-img"
+              />
               <h4 class="pricing-hdr">Money back</h4>
               <p class="pricing-txt">
                 100% guaranteed money back. No questions asked.
@@ -352,13 +416,15 @@
             Whatever your goal - we will get you there
           </p>
 
-          <br>
-          <hr class="hire-us-hr">
-          <br>
+          <br />
+          <hr class="hire-us-hr" />
+          <br />
 
           <p class="hire-us-txt">
-            <em>"I love Front! I love the ease of use, I love the fact that I
-              have total creative freedom..."</em>
+            <em
+              >"I love Front! I love the ease of use, I love the fact that I
+              have total creative freedom..."</em
+            >
           </p>
         </div>
 
@@ -370,9 +436,21 @@
           <p class="hubspot2">Executive Creative Director, HubSpot</p>
 
           <div class="people">
-            <img class="two-people three-people" src="./assets/people/woman_one.jpg" alt="">
-            <img class="two-people fourth-person" src="./assets/people/man_one.jpg" alt="">
-            <img class="one-person three-people" src="./assets/people/woman_two.jpg" alt="">
+            <img
+              class="two-people three-people"
+              src="./assets/people/woman_one.jpg"
+              alt=""
+            />
+            <img
+              class="two-people fourth-person"
+              src="./assets/people/man_one.jpg"
+              alt=""
+            />
+            <img
+              class="one-person three-people"
+              src="./assets/people/woman_two.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -384,19 +462,43 @@
           </p>
 
           <div class="fill-out">
-            <label for="fname"></label><br>
-            <input class="fname" type="text" id="fname" name="fname" value="First name"><br>
+            <label for="fname"></label><br />
+            <input
+              class="fname"
+              type="text"
+              id="fname"
+              name="fname"
+              value="First name"
+            /><br />
 
-            <label for="lname"></label><br>
-            <input class="lname" type="text" id="lname" name="lname" value="Last name">
+            <label for="lname"></label><br />
+            <input
+              class="lname"
+              type="text"
+              id="lname"
+              name="lname"
+              value="Last name"
+            />
           </div>
 
           <div class="fill-out">
-            <label for="email"></label><br>
-            <input class="email" type="text" id="lname" name="email" value="Work email">
+            <label for="email"></label><br />
+            <input
+              class="email"
+              type="text"
+              id="lname"
+              name="email"
+              value="Work email"
+            />
 
-            <label for="company"></label><br>
-            <input class="lname" type="text" id="lname" name="company" value="Company website"><br><br>
+            <label for="company"></label><br />
+            <input
+              class="lname"
+              type="text"
+              id="lname"
+              name="company"
+              value="Company website"
+            /><br /><br />
           </div>
 
           <div class="fill-out">
@@ -414,37 +516,45 @@
             </select>
           </div>
 
-          <textarea class="text-area" name="" id="" cols="28" rows="4" placeholder="Tell us more about your project, needs, and timeline."></textarea>
+          <textarea
+            class="text-area"
+            name=""
+            id=""
+            cols="28"
+            rows="4"
+            placeholder="Tell us more about your project, needs, and timeline."
+          ></textarea>
 
           <div class="marketing">
-            <input class="checkbox" type="checkbox">
+            <input class="checkbox" type="checkbox" />
             <p class="emails">
-              Yes, I'd like to receive occasional marketing emails from Front.
-              I have the right to opt out at any time. <br>
+              Yes, I'd like to receive occasional marketing emails from Front. I
+              have the right to opt out at any time. <br />
               <span class="policy">View privacy policy.</span>
             </p>
           </div>
 
           <div class="submit-btn">
-            <input class="submit" type="submit" value="Get Started">
+            <input class="submit" type="submit" value="Get Started" />
           </div>
         </form>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-footer desktop">
+    <footer class="bg-footer">
       <section class="footer-top">
         <div class="footer-col">
           <div class="contact-info">
-            <img class="footer-logo" src="./assets/project_logo/logo.svg" alt="">
+            <img
+              class="footer-logo"
+              src="./assets/project_logo/logo.svg"
+              alt=""
+            />
             <ul>
               <div class="location">
                 <i class="fa-solid fa-location-arrow icons"></i>
-                <p>115 Fish Road 
-                  <br> Hartford CT
-                  <br> 06051
-                </p>
+                <p>115 Fish Road, Hartford, CT</p>
               </div>
               <div class="contact">
                 <i class="fa-solid fa-phone icons"></i>
@@ -511,10 +621,11 @@
           </div>
         </div>
       </section>
-      
+
+      <div class="hr"></div>
+
       <section class="footer-bottom">
         <div class="footer-bottom-wrapper">
-          <div class="hr"></div>
           <div class="footer-nav">
             <div class="footer-left">
               <span>
@@ -529,34 +640,30 @@
               <ul>
                 <li>
                   <a href="#"
-                    ><span
-                      ><i
-                        class="fa-brands fa-facebook-f"
-                      ></i></span
+                    ><span><i class="fa-brands fa-facebook-f"></i></span
                   ></a>
                 </li>
                 <li class="active-social">
                   <a href="#"
-                    ><span
-                      ><i class="fa-brands fa-google"></i></span
+                    ><span><i class="fa-brands fa-google"></i></span
                   ></a>
                 </li>
                 <li>
                   <a href="#"
-                    ><span
-                      ><i class="fa-brands fa-twitter"></i></span
+                    ><span><i class="fa-brands fa-twitter"></i></span
                   ></a>
                 </li>
                 <li>
                   <a href="#"
-                    ><span
-                      ><i class="fa-brands fa-github"></i></span
+                    ><span><i class="fa-brands fa-github"></i></span
                   ></a>
                 </li>
               </ul>
 
               <select class="country" name="country" id="country">
-                <option value="usa">United States</option>
+                <option value="usa">
+                  <i class="fa-solid fa-flag-usa"></i>United States
+                </option>
                 <option value="italy">Italy</option>
                 <option value="germany">Germany</option>
               </select>
@@ -564,24 +671,20 @@
           </div>
           <div class="copyright">
             <p>
-              <span
-                ><i class="fa-regular fa-copyright"></i
-              ></span>
-              Front. 2023 Responsive designs. All rights
-              reserved.
+              <span><i class="fa-regular fa-copyright"></i></span>
+              Front. 2023 Responsive designs. All rights reserved.
             </p>
             <p class="visit-txt">
-              When you visit or interact with our sites, services
-              or tools, we or our authorized service providers
-              may <br> use cookies for storing information to help
-              provide you with a better, faster and safer
-              experience and <br>for marketing purposes.
+              When you visit or interact with our sites, services or tools, we
+              or our authorized service providers may <br />
+              use cookies for storing information to help provide you with a
+              better, faster and safer experience and <br />for marketing
+              purposes.
             </p>
           </div>
         </div>
       </section>
     </footer>
-
 
     <!-- sticky footer -->
     <!-- <div class="contact-us btn">
@@ -589,14 +692,12 @@
         <h2>Contact us</h2>
       </a>
     </div> -->
-    
+
     <!-- scroll up btn-->
     <a id="scrollUp" href="#pageTop">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
 
     <!-- Sticky Navbar-->
-
   </body>
-
 </html>

@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding: 5rem;
+  overflow-x: hidden;
 }
 
 /* Apply style rules at the base of our project*/
@@ -50,12 +51,26 @@ body {
   margin: 0;
   padding: 0;
 }
+/*TODO: start */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 *,
 ::after,
 ::before {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+body,
+html {
   max-width: 100%;
+  overflow-x: hidden;
+}
+
+.section {
+  margin-bottom: 5rem;
 }
 
 ul {
@@ -64,8 +79,12 @@ ul {
   list-style: none;
 }
 
-a { text-decoration: none; }
-p { margin-top: 0; }
+a {
+  text-decoration: none;
+}
+p {
+  margin-top: 0;
+}
 
 h2 {
   font-size: 1.75rem;
@@ -93,8 +112,17 @@ img {
   width: 100%;
   padding-left: var(--size-15);
   padding-right: var(--size-15);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  border-radius: var(--size-25);
+  border: none;
+  color: white;
+  background-color: #4a81f3;
+  padding: 8px 18px 8px 18px;
 }
 
 .btn {
@@ -112,7 +140,11 @@ img {
 }
 
 .btn-primary {
-  background-image: linear-gradient(90deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  background-image: linear-gradient(
+    90deg,
+    var(--grad-1) 0%,
+    var(--grad-2) 100%
+  );
   border: 0.0625rem solid var(--grad-1);
   box-shadow: 0 var(--size-10) var(--size-20) rgba(161, 236, 255, 0.5);
   transition: ease-in-out 0.3s;
@@ -146,19 +178,3 @@ img {
   padding: 0.475rem 1.75rem;
   font-weight: 600;
 }
-
-
-
-/* @media (min-width: 768px) {
-  .pricing-table,
-  .testimonial-grid,
-  .footer-bottom-wrapper { max-width: 720px; }
-}
-
-@media (min-width: 992px) {
-  footer .container {max-width: 960px;}
-}
-
-@media (min-width: 1200px) {
-  .container { max-width: 1140px;}
-} */

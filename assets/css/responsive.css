@@ -1,19 +1,16 @@
 @media screen and (max-width: 767px) {
-
-  .desktop {
-    max-width: 767px;
-  }
-
   [aria-controls="navbarDropdown"] {
     display: block;
     padding: 4px 20px 6px 20px;
     border-radius: var(--size-30);
   }
 
-  [aria-expanded="false"] ~ ul { display: none; }
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
 
   [aria-expanded="true"] ~ ul {
-    display: flex; 
+    display: flex;
     position: absolute;
     top: 117px;
     height: 20%;
@@ -31,8 +28,20 @@
     text-align: left;
   }
 
-  .navbar-container {
-    max-width: 767px;
+  .navbar-container,
+  .menu-bar,
+  .learn,
+  .key-benefits,
+  .form-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .navbar.sticky {
@@ -42,9 +51,13 @@
     padding: 24px 0 10px 0;
   }
 
-  .nav-link { margin: 0 0 6px 0; }
+  .nav-link {
+    margin: 10px 0;
+  }
 
-  a { text-decoration: none; }
+  a {
+    text-decoration: none;
+  }
 
   .menu2 {
     font-size: var(--size-16);
@@ -77,7 +90,9 @@
     );
   }
 
-  div > span:nth-child(2) { margin-left: 30px; }
+  div > span:nth-child(2) {
+    margin-left: 30px;
+  }
 
   .nav-bar {
     display: flex;
@@ -85,7 +100,9 @@
     align-items: center;
   }
 
-  .front-logo { width: 30%; }
+  .front-logo {
+    width: 30%;
+  }
 
   .nav-menu {
     display: none;
@@ -94,15 +111,9 @@
     margin: 20px 0 0 0;
   }
 
-  .nav-container {
-    display: flex;
-    float: right;
-    margin: 32px 0 0 0;
-  }
-
   .teams-links {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
   }
 
@@ -115,10 +126,12 @@
     font-size: var(--size-40);
   }
 
-  .header-sub > br { 
+  .header-sub > br {
     display: none;
   }
-  .teams-links {margin: 0 3rem;}
+  .teams-links {
+    margin: 0 3rem;
+  }
 
   .slide-top {
     -webkit-animation: slide-top 0.5s ease-in-out both;
@@ -146,7 +159,9 @@
     }
   }
 
-  .menu-bar {margin-bottom: 4rem; }
+  .menu-bar {
+    margin-bottom: 4rem;
+  }
 
   /* Key Benefits Section */
   .key-benefits-cards {
@@ -163,21 +178,35 @@
     transition: 0.5s;
   }
 
-  .responsive:hover { transform: scale(1.1); }
+  .responsive:hover {
+    transform: scale(1.1);
+  }
 
   /* Learn Section */
-  .learn { padding-top: inherit; }
+  .learn {
+    padding-top: inherit;
+  }
 
-  .learn-pad { margin-top: 80px; }
+  .learn-pad {
+    margin-top: 80px;
+  }
 
-  .padding { padding: var(--size-20); }
+  .padding {
+    padding: var(--size-20);
+  }
 
-  .learn-hdr { margin-left: 50px; }
+  .learn-hdr {
+    margin-left: 50px;
+  }
 
   /* Why Front */
-  .sec-four { margin-top: var(--size-50); }
+  .sec-four {
+    margin-top: var(--size-50);
+  }
 
-  .reasons { grid-template-columns: 1fr 1fr; }
+  .reasons {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .banner-two {
     height: 264px;
@@ -206,14 +235,21 @@
     justify-content: flex-start; /* Adjust the alignment as needed */
   }
 
-  .circle-div::after {
-    content: none;
+  .circles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .circle-item {
+    flex: 1;
+    min-width: 0; /* Prevent circles from growing too large */
   }
 
   .circle-txt {
     margin-left: 1rem;
-    text-align: center; 
-    margin-top: 0.5rem; 
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
   /* Christina section */
@@ -234,29 +270,43 @@
     right: -320%;
     height: 4px;
     width: 80px;
-    background: #EDEFF5;
+    background: #edeff5;
   }
 
-  .christina-pic-div { width: 200%; }
+  .christina-pic-div {
+    width: 200%;
+  }
 
-  .circle-txt { padding-top: var(--size-10);}
+  .circle-txt {
+    padding-top: var(--size-10);
+  }
 
-  .christina-right { 
+  .christina-right {
     margin: var(--size-100) 0 0 0;
     width: 86%;
   }
 
-  .hubspot-logo { width: 53%; }
+  .hubspot-logo {
+    width: 53%;
+  }
 
   /** Trusted Section */
-  .comp-logo { height: 30px; }
+  .comp-logo {
+    height: 30px;
+  }
 
-  .disappear { height: 26px; }
+  .disappear {
+    height: 26px;
+  }
 
   /* Pricing Section */
-  .price-title { margin: 110px 0 14px 0; }
+  .price-title {
+    margin: 110px 0 14px 0;
+  }
 
-  .price-grid { display: inherit; }
+  .price-grid {
+    display: inherit;
+  }
 
   .pricing {
     box-shadow: 0px 6px 20px -12px #888888;
@@ -272,9 +322,13 @@
     cursor: pointer;
   }
 
-  .price-btn:hover { transform: scale(1.1); }
+  .price-btn:hover {
+    transform: scale(1.1);
+  }
 
-  .row { width: 100%; }
+  .row {
+    width: 100%;
+  }
 
   .row2 {
     margin: -16px 0 0 0;
@@ -325,7 +379,7 @@
     width: 100%;
   }
 
-  .hire-us-subtxt { 
+  .hire-us-subtxt {
     white-space: nowrap !important; /* Force text to stay on one line */
     max-width: none !important; /* Remove any maximum width constraints */
     overflow: hidden; /* Hide any content that overflows */
@@ -340,11 +394,13 @@
     width: 100%;
   }
 
-  .james, .hubspot2 {
+  .james,
+  .hubspot2 {
     display: none !important;
   }
 
-  .two-people.three-people, .two-people.fourth-person {
+  .two-people.three-people,
+  .two-people.fourth-person {
     width: 20%;
   }
 
@@ -369,7 +425,10 @@
     margin-top: 0;
   }
 
-  .fname, .lname { width: 90%; }
+  .fname,
+  .lname {
+    width: 90%;
+  }
 
   .email {
     width: 90%;
@@ -385,7 +444,9 @@
     font-size: var(--size-12);
   }
 
-  .text-area { margin-top: 2px; }
+  .text-area {
+    margin-top: 2px;
+  }
 
   .emails {
     position: relative;
@@ -401,7 +462,9 @@
     cursor: pointer;
   }
 
-  .submit:hover { transform: scale(1.1); }
+  .submit:hover {
+    transform: scale(1.1);
+  }
 
   /* Hire Us Section */
   .form-container {
@@ -431,7 +494,9 @@
     line-height: 1.5rem;
   }
 
-  .policy {line-height: 2rem;}
+  .policy {
+    line-height: 2rem;
+  }
 
   .james {
     display: inherit;
@@ -461,7 +526,7 @@
   .contact-info {
     /* border: 2px solid orange; */
     grid-column: 1 / 3;
-    grid-row: 1 /3; 
+    grid-row: 1 /3;
   }
 
   .location > p {
@@ -471,27 +536,27 @@
   .group > .company {
     /* border: 2px solid lightblue; */
     grid-column: 3 / 4;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
   }
 
   .group > .features {
     /* border: 2px solid firebrick; */
     grid-column: 4 / 5;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
   }
 
   .group > .documentation {
     /* border: 2px solid darkgreen; */
     grid-column: 1 / 2;
-    grid-row: 4 / 4; 
+    grid-row: 4 / 4;
   }
 
   .group > .resources {
     /* border: 2px solid purple; */
     grid-column: 3 / 5;
-    grid-row: 2 / 3; 
+    grid-row: 2 / 3;
   }
-  
+
   .resources > .footer-col {
     margin-left: 2rem;
   }
@@ -507,13 +572,21 @@
     cursor: pointer;
   }
 
-  .careers-btn:hover { transform: scale(1.1); }
+  .careers-btn:hover {
+    transform: scale(1.1);
+  }
 
-  .features { left: -4%; }
+  .features {
+    left: -4%;
+  }
 
-  .documentation { height: 145px; }
+  .documentation {
+    height: 145px;
+  }
 
-  .help-icon { width: 4%; }
+  .help-icon {
+    width: 4%;
+  }
 
   .arrow {
     margin-top: 4px;
@@ -562,11 +635,17 @@
   .desktop {
     max-width: 599px;
   }
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
-  img { width: inherit; }
+  img {
+    width: inherit;
+  }
 
-  div > span:nth-child(2) { margin-left: 0; }
+  div > span:nth-child(2) {
+    margin-left: 0;
+  }
 
   .menu-bar {
     background: linear-gradient(
@@ -599,8 +678,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 35%;  /* Vertically center the container */
-    left: 50%;  /* Horizontally center the container */
+    top: 35%; /* Vertically center the container */
+    left: 50%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     height: 28%;
     width: 100%;
@@ -614,8 +693,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 85%;  /* Vertically center the container */
-    left: 52.5%;  /* Horizontally center the container */
+    top: 85%; /* Vertically center the container */
+    left: 52.5%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     text-align: center;
     align-items: center;
@@ -627,14 +706,16 @@
     margin: 32px 0 0 0;
   }
 
-  .front-logo { width: 38%; }
+  .front-logo {
+    width: 38%;
+  }
 
   .play-btn {
-      white-space: nowrap; /* Ensures text stays on one line */
+    white-space: nowrap; /* Ensures text stays on one line */
   }
 
   .lrn-more {
-      white-space: nowrap; /* Ensures text stays on one line */
+    white-space: nowrap; /* Ensures text stays on one line */
   }
 
   /* Key Benefits */
@@ -645,19 +726,27 @@
   }
 
   /* Learn Section */
-  .learn { padding-top: inherit; }
+  .learn {
+    padding-top: inherit;
+  }
 
-  .learn-pad { margin-top: 70px; }
+  .learn-pad {
+    margin-top: 70px;
+  }
 
   .learn-hdr {
     margin: 0px 0 0 20px;
     padding: 0;
   }
 
-  .section .learn-hdr-img { width: inherit; }
+  .section .learn-hdr-img {
+    width: inherit;
+  }
 
   /* Why Front Section */
-  .reasons { grid-template-columns: 1fr; }
+  .reasons {
+    grid-template-columns: 1fr;
+  }
 
   .banner-two {
     position: relative;
@@ -684,8 +773,9 @@
     top: 42px;
   }
 
-  .hubspot-logo { width: 54%; }
-
+  .hubspot-logo {
+    width: 54%;
+  }
 
   /* Pricing Section */
   .pricing {
@@ -693,7 +783,9 @@
     height: 230px;
   }
 
-  .price-info-grid { display: initial; }
+  .price-info-grid {
+    display: initial;
+  }
 
   .card {
     margin: 18px 0 0 50px;
@@ -718,7 +810,9 @@
     width: inherit;
   }
 
-  .hire-us-subtxt { font-size: var(--size-16); }
+  .hire-us-subtxt {
+    font-size: var(--size-16);
+  }
 
   .hire-us-hr {
     width: 100%;
@@ -736,7 +830,7 @@
     margin: 6px 0 0 0;
     width: 184px;
     font-size: var(--size-12);
-    color: #ABB0BE;
+    color: #abb0be;
   }
 
   .three-people {
@@ -777,20 +871,31 @@
     margin: inherit;
   }
 
-  .group { 
+  .group {
     display: inherit;
     gap: 1rem;
     width: auto;
     left: inherit;
   }
 
-  .company, .features, .documentation, .resources { margin: 0; }
+  .company,
+  .features,
+  .documentation,
+  .resources {
+    margin: 0;
+  }
 
-  .documentation { height: inherit; }
+  .documentation {
+    height: inherit;
+  }
 
-  .features { left: 0; }
+  .features {
+    left: 0;
+  }
 
-  .tech { margin-bottom: 0; }
+  .tech {
+    margin-bottom: 0;
+  }
 
   .resources {
     position: relative;
@@ -809,7 +914,6 @@
     margin-right: var(--size-20);
     align-self: center;
   }
-
 }
 
 /* Mobile Phones- iPhone Pro */
@@ -836,8 +940,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 35%;  /* Vertically center the container */
-    left: 50%;  /* Horizontally center the container */
+    top: 35%; /* Vertically center the container */
+    left: 50%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     height: 28%;
     width: 100%;
@@ -851,16 +955,18 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 85%;  /* Vertically center the container */
-    left: 52.5%;  /* Horizontally center the container */
+    top: 85%; /* Vertically center the container */
+    left: 52.5%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     text-align: center;
     align-items: center;
     box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
   }
 
-  div > span:nth-child(2) { margin-left: 122px; }
-  
+  div > span:nth-child(2) {
+    margin-left: 122px;
+  }
+
   /* Hire Us Section */
   .form {
     margin: 40px 20px 0 40px;
@@ -899,8 +1005,8 @@
 
   .circle-txt {
     margin-left: 1rem;
-    text-align: center; 
-    margin-top: 0.5rem; 
+    text-align: center;
+    margin-top: 0.5rem;
   }
 }
 
@@ -924,8 +1030,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 35%;  /* Vertically center the container */
-    left: 50%;  /* Horizontally center the container */
+    top: 35%; /* Vertically center the container */
+    left: 50%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     height: 28%;
     width: 100%;
@@ -939,8 +1045,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 85%;  /* Vertically center the container */
-    left: 52.5%;  /* Horizontally center the container */
+    top: 85%; /* Vertically center the container */
+    left: 52.5%; /* Horizontally center the container */
     transform: translate(-50%, -50%); /* Center the container using transform */
     text-align: center;
     align-items: center;
@@ -960,7 +1066,9 @@
   }
 
   /* Key Benefits Section */
-  div > span:nth-child(2) { margin-left: -18px; }
+  div > span:nth-child(2) {
+    margin-left: -18px;
+  }
 
   .img-wrapper {
     position: absolute;
@@ -1004,13 +1112,17 @@
 
   .circle-txt {
     margin-left: 1rem;
-    text-align: center; 
-    margin-top: 0.5rem; 
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
-  .section .learn-hdr-img { width: 104%; }
+  .section .learn-hdr-img {
+    width: 104%;
+  }
 
-  .banner-one { width: 100%; }
+  .banner-one {
+    width: 100%;
+  }
 
   /* Why Front Section */
   .banner-two {
@@ -1019,7 +1131,9 @@
   }
 
   /* Hire Us Section */
-  .hire-us-block { width: 324px; }
+  .hire-us-block {
+    width: 324px;
+  }
 
   .hire-us-hr {
     width: 100%;
@@ -1038,5 +1152,7 @@
   }
 
   /* Footer Section */
-  footer .footer-top { right: 3%; }
+  footer .footer-top {
+    right: 3%;
+  }
 }
